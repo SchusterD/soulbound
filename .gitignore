@@ -1,6 +1,8 @@
 # IDE
 .idea/
 .vs/
+.editorconfig
+.npmignore
 
 # Node Modules
 node_modules/
