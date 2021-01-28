@@ -1,0 +1,711 @@
+{
+  "Actor": {
+    "types": [
+      "character",
+      "npc",
+      "creature",
+      "deceiver",
+      "akuma",
+      "horror"
+    ],
+    "templates": {
+      "background": {
+        "value": ""
+      },
+      "stats": {
+        "str": {
+          "value": 4
+        },
+        "end": {
+          "value": 4
+        },
+        "agi": {
+          "value": 4
+        },
+        "per": {
+          "value": 4
+        },
+        "kno": {
+          "value": 4
+        },
+        "cun": {
+          "value": 4
+        }
+      },
+      "combat": {
+        "actions": {
+          "standard": {
+            "max": 1,
+            "value": 0
+          },
+          "free": {
+            "max": 1,
+            "value": 0
+          }
+        },
+        "attack": {
+          "value": 0,
+          "min": 0,
+          "bonus": 0,
+          "types": []
+        },
+        "defend": {
+          "value": 0,
+          "min": 0,
+          "bonus": 0
+        },
+        "recover": {
+          "value": 0,
+          "min": 1,
+          "bonus": 0
+        },
+        "armor": {
+          "slash": {
+            "value": 0,
+            "min": 0,
+            "mod": 0
+          },
+          "impact": {
+            "value": 0,
+            "min": 0,
+            "mod": 0
+          },
+          "pierce": {
+            "value": 0,
+            "min": 0,
+            "mod": 0
+          },
+          "elemental": {
+            "value": 0,
+            "min": 0,
+            "mod": 0
+          }
+        }
+      },
+      "resources": {
+        "injuries": {
+          "value": 0,
+          "min": 0,
+          "max": 4
+        },
+        "movement": {
+          "value": 0,
+          "min": 0,
+          "bonus": 0
+        },
+        "actions": {
+          "value": 0,
+          "min": 0
+        }
+      },
+      "house": [],
+      "currency": {
+        "value": 0
+      }
+    },
+    "character": {
+      "templates": [
+        "background",
+        "stats",
+        "combat",
+        "resources",
+        "house",
+        "currency"
+      ],
+      "wielder": false,
+      "attributes": {
+        "level": {
+          "value": 1
+        },
+        "experience": {
+          "value": 0,
+          "min": 0,
+          "max": 40
+        }
+      },
+      "details": {
+        "background": "",
+        "apperance": "",
+        "trait": "",
+        "ideal": "",
+        "attachment": "",
+        "flaw": ""
+      },
+      "skills": {
+        "max": 0,
+        "acr": {
+          "value": 0,
+          "ability": "agi"
+        },
+        "aty": {
+          "value": 0,
+          "ability": "kno"
+        },
+        "ath": {
+          "value": 0,
+          "ability": "str"
+        },
+        "brt": {
+          "value": 0,
+          "ability": "cun"
+        },
+        "blf": {
+          "value": 0,
+          "ability": "cun"
+        },
+        "clm": {
+          "value": 0,
+          "ability": "cun"
+        },
+        "dis": {
+          "value": 0,
+          "ability": "cun"
+        },
+        "fin": {
+          "value": 0,
+          "ability": "agi"
+        },
+        "frc": {
+          "value": 0,
+          "ability": "str"
+        },
+        "hel": {
+          "value": 0,
+          "ability": "kno"
+        },
+        "inf": {
+          "value": 0,
+          "ability": "agi"
+        },
+        "itd": {
+          "value": 0,
+          "ability": "str"
+        },
+        "lis": {
+          "value": 0,
+          "ability": "per"
+        },
+        "lor": {
+          "value": 0,
+          "ability": "kno"
+        },
+        "nav": {
+          "value": 0,
+          "ability": "kno"
+        },
+        "prs": {
+          "value": 0,
+          "ability": "cun"
+        },
+        "rep": {
+          "value": 0,
+          "ability": "kno"
+        },
+        "snk": {
+          "value": 0,
+          "ability": "agi"
+        },
+        "spt": {
+          "value": 0,
+          "ability": "per"
+        },
+        "sur": {
+          "value": 0,
+          "ability": "know"
+        },
+        "trk": {
+          "value": 0,
+          "ability": "per"
+        },
+        "custom1": {
+          "value": 0,
+          "abiltiy": ""
+        },
+        "custom2": {
+          "value": 0,
+          "abiltiy": ""
+        },
+        "custom3": {
+          "value": 0,
+          "abiltiy": ""
+        },
+        "custom4": {
+          "value": 0,
+          "abiltiy": ""
+        }
+      },
+      "arcaneTricks": [],
+      "powers": [],
+      "corruptions": []
+    },
+    "npc": {
+      "templates": [],
+      "corruption": {
+        "value": 0,
+        "rank": 0,
+        "type": "",
+        "bonus": {
+          "injuries": 0,
+          "armor": {
+            "slash": 0,
+            "impact": 0,
+            "pierce": 0,
+            "elemental": 0
+          }
+        }
+      }
+    },
+    "creature": {
+      "templates": ["stats", "combat"],
+      "xp": 5
+    },
+    "deceiver": {
+      "templates": ["stats", "combat"],
+      "xp": 15,
+      "details": {
+        "size": {
+          "round": true,
+          "value": 1
+        },
+        "environment": {
+          "value": []
+        }
+      },
+      "traits": {
+        "specialAttacks": [],
+        "weakness": {
+          "value": "",
+          "effect": "",
+          "injuries": {
+            "current": 0,
+            "max": 0,
+            "type": []
+          },
+          "location": "",
+          "rank": {
+            "title": "",
+            "value": 0
+          }
+        },
+        "variants": []
+      }
+    },
+    "akuma": {
+      "templates" : ["stats", "combat"],
+      "xp": 45,
+      "details": {
+        "size": {
+          "round": true,
+          "value": 1
+        },
+        "environment": {
+          "value": ""
+        },
+        "disguise": {
+          "value": false,
+          "desc": ""
+        }
+      },
+      "traits": {
+        "rank": {
+          "value": 1,
+          "min": 1,
+          "title": ""
+        },
+        "powers": {
+          "rank": 1,
+          "value": "",
+          "bonus": {
+            "injuries": 0,
+            "armor": {
+              "slash": 0,
+              "impact": 0,
+              "pierce": 0,
+              "elemental": 0
+            }
+          }
+        },
+        "corruption": {
+          "tier": 0,
+          "type": ""
+        },
+        "physResist": 0,
+        "specials": []
+      }
+    },
+    "horror": {
+      "traits": {
+        "corruption": {
+          "value": ""
+        }
+      },
+      "specials": []
+    }
+  },
+  "Item": {
+    "types": [
+      "arcaneTrick",
+      "corruption",
+      "variant",
+      "specialAttack",
+      "power",
+      "vilisCoronam",
+      "weapon",
+      "trait",
+      "upgrade",
+      "bond",
+      "guildItem",
+      "trade",
+      "house",
+      "armor",
+      "armorImprovement",
+      "consumable",
+      "tool",
+      "loot"
+    ],
+    "templates": {
+      "base": {
+        "name": "",
+        "description": ""
+      },
+      "action": {
+        "type": "",
+        "cost": {
+          "value": 0
+        }
+      },
+      "cr": {
+        "value": 1
+      },
+      "activeEffect": {
+        "value": "",
+        "duration": {
+          "value": ""
+        },
+        "range": {
+          "value": "",
+          "type": ""
+        }
+      },
+      "attributes": {
+        "attack": {
+          "value": 0,
+          "bonus": 0
+        },
+        "defend": {
+          "value": 0,
+          "bonus": 0
+        },
+        "recover": {
+          "value": 0,
+          "bonus": 0
+        }
+      },
+      "dt": {
+        "slash": false,
+        "impact": false,
+        "pierce": false,
+        "elemental": false
+      }
+    },
+    "arcaneTrick": {
+      "templates": ["base", "action", "cr", "activeEffect"]
+    },
+    "corruption": {
+      "templates": ["base"],
+      "type": "",
+      "attributes": {
+        "attack": {
+          "bonus": 0
+        },
+        "defend": {
+          "bonus": 0
+        },
+        "recover": {
+          "bonus": 0
+        },
+        "injuries": {
+          "bonus": 0
+        },
+        "slashr": {
+          "bonus": 0
+        },
+        "impactr": {
+          "bonus": 0
+        },
+        "pierce": {
+          "bonus": 0
+        },
+        "elemental": {
+          "bonus": 0
+        }
+      }
+    },
+    "variant": {
+      "templates": ["base"],
+      "type": "",
+      "attributes": {
+        "attack": {
+          "bonus": 0
+        },
+        "defend": {
+          "bonus": 0
+        },
+        "recover": {
+          "bonus": 0
+        },
+        "injuries": {
+          "bonus": 0
+        },
+        "slashr": {
+          "bonus": 0
+        },
+        "impactr": {
+          "bonus": 0
+        },
+        "pierce": {
+          "bonus": 0
+        },
+        "elemental": {
+          "bonus": 0
+        }
+      }
+    },
+    "specialAttack": {
+      "templates": ["background"],
+      "range": {
+        "value": 0,
+        "units": ""
+      },
+      "action": {
+        "value": 1,
+        "type": "standard"
+      },
+      "enabled": false
+    },
+    "power": {
+      "templates": [
+        "base", "action", "cr", "activeEffect"
+      ],
+      "corruption": "",
+      "type": {
+        "value": ""
+      },
+      "heart": {
+        "value": [""]
+      },
+      "rank": {
+        "value": 1
+      },
+      "glyphs": {
+        "sigil": {
+          "value": false,
+          "available": false
+        },
+        "dart": {
+          "value": false,
+          "available": false
+        },
+        "link": {
+          "value": false,
+          "available": false
+        },
+        "attunement": {
+          "value": false,
+          "available": false
+        },
+        "multicasting": {
+          "value": false,
+          "available": false
+        }
+      }
+    },
+    "vilisCoronam": {
+      "templates": ["base"],
+      "powers": []
+    },
+    "weapon": {
+      "templates": [
+        "base", "attributes"
+      ],
+      "cost": {
+        "value": 0
+      },
+      "traits": [],
+      "upgrades": []
+    },
+    "trait": {
+      "templates": ["base"],
+      "effect": "",
+      "condition": ""
+    },
+    "upgrade": {
+      "templates": ["base"],
+      "req": {
+        "value": ""
+      },
+      "rank": {
+        "value": ""
+      },
+      "cost": {
+        "value": 0
+      },
+      "effect": "",
+      "condition": ""
+    },
+    "bond": {
+      "templates": [
+        "base", "attributes", "dt"
+      ],
+      "bound": false,
+      "background": "",
+      "weaponSet": {
+        "weaponOne": {
+          "value": ""
+        },
+        "weaponTwo": {
+          "value": null
+        }
+      },
+      "build": {
+        "attuned": false,
+        "paired": false,
+        "combined": false
+      },
+      "powers": [],
+      "traits": [],
+      "upgrades": []
+    },
+    "guildItem": {
+      "name": "",
+      "description": "",
+      "activeEffect": "",
+      "duration": "",
+      "usageRating": "",
+      "quantity": "",
+      "size": "",
+      "house": {
+        "value": "",
+        "proficient": false
+      },
+      "trade": {
+        "value": null,
+        "proficient": false
+      }
+    },
+    "trade": {
+      "templates": ["base"]
+    },
+    "house": {
+      "templates": ["base"],
+      "trade": "",
+      "rank": {
+        "value": 0,
+        "title": "",
+        "xp": {
+          "completed": 0,
+          "max": 0
+        }
+      },
+      "title": "",
+      "slots": {
+        "value": 0,
+        "min": 0,
+        "max": 0
+      }
+    },
+    "armor": {
+      "name": "",
+      "description": "",
+      "cost": "",
+      "part": "",
+      "values": {
+        "slash": 0,
+        "impact": 0,
+        "pierce": 0,
+        "elemental": 0
+      },
+      "quality": {
+        "name": "",
+        "value": 0
+      },
+      "armorImprovements": []
+    },
+    "armorImprovement": {
+      "name": "",
+      "description": "",
+      "bonus": {
+        "slash": {
+          "value": 0
+        },
+        "impact": {
+          "value": 0
+        },
+        "pierce": {
+          "value": 0
+        },
+        "elemental": {
+          "value": 0
+        }
+      },
+      "special": false
+    },
+    "consumable": {
+      "name": "",
+      "type": "",
+      "description": "",
+      "activatedEffect": {
+        "activation": {
+          "type": "",
+          "cost": 0,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": 0,
+          "max": 0,
+          "per": null
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null
+        }
+      },
+      "action": {
+        "value": 0,
+        "type": "free"
+      },
+      "cost": 0,
+      "ammo": false,
+      "uses": {
+        "autoDestroy": false
+      }
+    },
+    "tool": {
+      "name": "",
+      "description": "",
+      "skill": "",
+      "chatFlavor": "",
+      "proficient": false
+    },
+    "loot": {
+      "templates": ["base"]
+    }
+  }
+
+}

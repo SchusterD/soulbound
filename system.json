@@ -1,0 +1,116 @@
+{
+  "name": "soulbound",
+  "title": "Soulbound - Dark Industrial Fantasy",
+  "description": "Game system developed by Andi Lynn Licht.",
+  "version": "1.0.0",
+  "author": "Douglas Schuster",
+  "scripts": [],
+  "esmodules": ["soulbound.js"],
+  "styles": ["soulbound.css"],
+  "packs": [
+      {
+          "name": "wielders",
+          "label": "Wielders",
+          "system": "soulbound",
+          "path": "packs/wielders.db",
+          "entity": "Actor"
+      },
+      {
+          "name": "deceivers",
+          "label": "Deceivers",
+          "system": "soulbound",
+          "path": "packs/deceivers.db",
+          "entity": "Actor"
+      },
+      {
+          "name": "akuma",
+          "label": "Akuma",
+          "system": "soulbound",
+          "path": "packs/akuma.db",
+          "entity": "Actor"
+      },
+      {
+          "name": "animals",
+          "label": "Animals",
+          "system": "soulbound",
+          "path": "packs/animals.db",
+          "entity": "Actor"
+      }, {
+          "name": "items",
+          "label": "Items",
+          "system": "soulbound",
+          "path": "packs/items.db",
+          "entity": "Item"
+      }, {
+          "name": "guilditems",
+          "label": "Guild Items",
+          "system": "soulbound",
+          "path": "packs/guilditems.db",
+          "entity": "Item"
+      }, {
+          "name": "weapons",
+          "label": "Weapons",
+          "system": "soulbound",
+          "path": "packs/weapons.db",
+          "entity": "Item"
+      }, {
+          "name": "weapontraits",
+          "label": "Weapons Traits",
+          "system": "soulbound",
+          "path": "packs/weaponstraits.db",
+          "entity": "Item"
+      }, {
+          "name": "corruptions",
+          "label": "Corruptions & Powers",
+          "system": "soulbound",
+          "path": "packs/corruptions.db",
+          "entity": "Item"
+      }, {
+          "name": "arcanetricks",
+          "label": "Arcane Tricks",
+          "system": "soulbound",
+          "path": "packs/arcanetricks.db",
+          "entity": "Item"
+      }, {
+          "name": "viliscoronam",
+          "label": "Vilis Coronam",
+          "system": "soulbound",
+          "path": "packs/viliscoronam.db",
+          "entity": "Item"
+      }, {
+          "name": "races",
+          "label": "Racial Features",
+          "system": "soulbound",
+          "path": "./packs/races.db",
+          "entity": "Item"
+      }, {
+          "name": "houseranks",
+          "label": "House Ranks",
+          "system": "soulbound",
+          "path": "packs/houseranks.db",
+          "entity": "Item"
+      }, {
+          "name": "rules",
+          "label": "Rules",
+          "system": "soulbound",
+          "path": "./pacaks/rules.db",
+          "entity": "JournalEntry"
+      }
+  ],
+  "languages": [
+      {
+          "lang": "en",
+          "name": "English",
+          "path": "lang/en.json"
+      }
+  ],
+  "socket": true,
+  "gridDistance": 2,
+  "gridUnits": "m",
+  "primaryTokenAttribute": "attributes.hp",
+  "secondaryTokenAttribute": null,
+  "minimumCoreVersion": "0.7.9",
+  "url": "https://gitlab.com/douglas.schuster/foundry-vtt-soulbound/",
+  "manifest": "https://gitlab.com/douglas.schuster/foundry-vtt-soulbound/raw/master/system.json",
+  "download": "https://gitlab.com/douglas.schuster/foundry-vtt-soulbound/-/archive/release-1.0.0/dnd5e-release-1.0.0.zip"
+}
